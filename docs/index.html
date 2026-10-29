@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PROLED Wallpaper — The new MacBook Pro look. On your Mac.</title>
+  <meta name="description" content="The new MacBook Pro wallpaper, with a smoother rounded finish and pure-black corners. Download five Mac sizes as full-resolution PNGs.">
+  <meta name="theme-color" content="#fbfbfd">
+  <link rel="canonical" href="https://reffwu.github.io/proled-wallpaper/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PROLED Wallpaper">
+  <meta property="og:description" content="The new MacBook Pro look. On your Mac. A smoother rounded finish, in five Mac sizes.">
+  <meta property="og:url" content="https://reffwu.github.io/proled-wallpaper/">
+  <meta property="og:image" content="https://reffwu.github.io/proled-wallpaper/assets/social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="shared/theme.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" as="image" href="assets/device-pro16.webp">
+  <script src="shared/theme.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to the wallpaper</a>
+  <nav class="top-nav" aria-label="Main navigation">
+    <div class="shell nav-inner">
+      <a href="https://github.com/ReffWu/apps" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/></svg>
+        <span data-i18n="moreWork">More by ReffWu</span>
+      </a>
+      <div class="nav-right">
+        <span class="nav-tag" data-i18n="navTag">Wallpapers for Mac</span>
+        <button class="language-toggle" type="button" aria-label="切换为简体中文">中文</button>
+        <button class="theme-toggle" aria-label="Switch appearance" type="button"></button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="hero shell" aria-labelledby="product-title">
+      <h1 id="product-title">PROLED Wallpaper</h1>
+      <p class="hero-promise" data-i18n="heroPromise">The new MacBook Pro look.<br>On your Mac.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#download"><span data-i18n="chooseMac">Choose your Mac</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 7 7-7 7"/></svg></a>
+        <a class="text-link" href="https://github.com/ReffWu/proled-wallpaper/releases/latest/download/proled-wallpapers-all-sizes.zip" data-i18n="allSizes">Download all sizes</a>
+      </div>
+      <p class="hero-note" data-i18n="heroNote">Free. Five Mac sizes. Full-resolution PNG.</p>
+      <figure class="hero-product" aria-label="PROLED Wallpaper on a MacBook display">
+        <img class="product-render" src="assets/device-pro16.webp" width="1920" height="1180" fetchpriority="high" alt="PROLED Wallpaper on the silver MacBook Pro 16-inch">
+      </figure>
+    </section>
+
+    <section class="finish shell" id="finish" aria-labelledby="finish-title">
+      <div class="finish-copy">
+        <h2 id="finish-title" data-i18n="finishTitle">A smoother<br>finish.</h2>
+        <p data-i18n="finishBody">The same silver-blue light. With refined lower curves that flow smoothly into pure black.</p>
+        <p class="finish-note" data-i18n="finishNote">A small detail, for a desktop you look at every day.</p>
+      </div>
+      <figure class="finish-figure">
+        <div class="comparison" style="--split: 50%">
+          <img src="assets/edge-original.png" width="720" height="640" alt="Original bottom corner with gray outside the curve" loading="lazy">
+          <div class="refined-layer"><img src="assets/edge-rounded.png" width="720" height="640" alt="Refined corner with a smooth curve and pure-black exterior" loading="lazy"></div>
+          <span class="compare-label original-label" data-i18n="original">Original</span>
+          <span class="compare-label rounded-label" data-i18n="rounded">Rounded</span>
+          <span class="comparison-line" aria-hidden="true"><span class="comparison-handle"><svg viewBox="0 0 24 24"><path d="m8 8-4 4 4 4m8-8 4 4-4 4"/></svg></span></span>
+          <input id="corner-compare" type="range" min="0" max="100" value="50" aria-label="Compare original and rounded corners">
+        </div>
+        <figcaption data-i18n="compareHint">Slide to see the difference.</figcaption>
+      </figure>
+    </section>
+
+    <section class="download-section" id="download" aria-labelledby="download-title">
+      <div class="shell">
+        <h2 id="download-title" data-i18n="downloadTitle">Made to fit your Mac.</h2>
+        <p class="section-intro" data-i18n="downloadIntro">Choose your Mac. Your wallpaper is ready.</p>
+        <div class="model-families" role="group" aria-label="Choose your Mac family">
+          <button type="button" data-family="pro" aria-pressed="true">MacBook Pro</button>
+          <button type="button" data-family="air" aria-pressed="false">MacBook Air</button>
+          <button type="button" data-family="studio" aria-pressed="false">Studio Display</button>
+        </div>
+        <div class="download-layout">
+          <div class="selected-preview">
+            <img class="product-render" id="selected-image" src="assets/device-pro16.webp" width="1920" height="1180" alt="PROLED Wallpaper for MacBook Pro 16-inch" loading="lazy">
+          </div>
+          <div class="download-choice">
+            <div id="model-sizes" class="model-sizes" role="group" aria-label="Choose display size">
+              <button type="button" data-model="pro16" aria-pressed="true">16-inch</button>
+              <button type="button" data-model="pro14" aria-pressed="false">14-inch</button>
+            </div>
+            <h3 id="model-name">MacBook Pro 16″</h3>
+            <p id="model-description" class="model-description" data-i18n="proDescription">For the 3456 × 2234 display.</p>
+            <p class="file-spec" id="file-spec">3456 × 2234 <span>·</span> PNG <span>·</span> 19.3 MB</p>
+            <a class="button primary download-button" id="download-link" href="https://github.com/ReffWu/proled-wallpaper/releases/latest/download/proled-macbook-pro-16-3456x2234.png"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 17v4h14v-4"/></svg><span data-i18n="downloadPNG">Download PNG</span></a>
+            <a class="text-link all-downloads" href="https://github.com/ReffWu/proled-wallpaper/releases/latest/download/proled-wallpapers-all-sizes.zip" data-i18n="allFive">All five sizes in one ZIP</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-to shell" aria-labelledby="how-title">
+      <h2 id="how-title" data-i18n="howTitle">A new desktop.<br>In a moment.</h2>
+      <p data-i18n="howBody">Download your PNG. Open System Settings → Wallpaper, then add the image. That’s it.</p>
+      <a class="text-link" href="https://support.apple.com/guide/mac-help/customize-the-wallpaper-on-your-mac-mchlp3013/mac" target="_blank" rel="noopener noreferrer"><span data-i18n="wallpaperHelp">How to change your Mac wallpaper</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 7 7-7 7"/></svg></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <p class="edition-credit" data-i18n="credit">Original artwork from Apple. Wallpaper recreation by <a href="https://basicappleguy.com/haberdashery/macbook-pro-proled-xdr" target="_blank" rel="noopener noreferrer">Basic Apple Guy</a>. Rounded edition by <a href="https://github.com/ReffWu">ReffWu</a>.</p>
+      <p class="edition-note" data-i18n="editionNote">An independent wallpaper adaptation. The PNGs preserve the available source detail; previews are resized for the web.</p>
+      <div class="footer-bottom"><span>PROLED Wallpaper</span><div><a href="https://github.com/ReffWu/proled-wallpaper" data-i18n="github">GitHub</a><a href="https://github.com/ReffWu/proled-wallpaper/blob/main/docs/method.md" data-i18n="behindDetails">Behind the details</a><a href="https://github.com/ReffWu/proled-wallpaper/blob/main/ATTRIBUTION.md" data-i18n="credits">Credits</a></div></div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -2,3 +2,9 @@
 dist/
 node_modules/
 *.rgb
+
+# Local presentation research and review
+.impeccable/
+PRODUCT.md
+DESIGN.md
+docs/presentation-brief.md

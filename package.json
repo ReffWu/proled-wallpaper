@@ -1,9 +1,9 @@
 {
-  "name": "proled-rounded-wallpapers",
+  "name": "proled-wallpaper",
   "version": "2.0.0",
   "private": true,
   "type": "module",
-  "description": "Pure-black rounded bottom corners for PROLED wallpapers, with five lossless PNG sizes.",
+  "description": "The new MacBook Pro look. On your Mac. Refined rounded wallpapers in five Mac sizes.",
   "engines": {
     "node": ">=20"
   },

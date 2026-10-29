@@ -1,13 +1,19 @@
-## PROLED 纯黑底部圆角壁纸 v2.0.0
+# PROLED Wallpaper
 
-对壁纸最底下左右两侧的曲线进行连续超椭圆拟合，将曲线外侧填充为纯黑 #000000，形成平滑的底部圆角效果。提供五种尺寸的无损 PNG；网页预览与处理代码见项目首页。
+**The new MacBook Pro look. On your Mac.**
 
-- MacBook Pro 16 英寸：3456×2234
-- MacBook Pro 14 英寸：3024×1964
-- MacBook Air 13 英寸（M2 及以后）：2560×1664
-- MacBook Air 15 英寸：2880×1864
-- Mac Studio 搭配 5K / 16:9 显示器：5120×2880
+[Explore the wallpaper](https://reffwu.github.io/proled-wallpaper/) · [简体中文](https://reffwu.github.io/proled-wallpaper/?lang=zh)
 
-下载单张 PNG，或下载 `proled-wallpapers-all-sizes.zip` 获取全部五张。`SHA256SUMS.txt` 用于校验单张 PNG。
+Silver-blue light, with a smoother rounded finish that flows into pure black. Choose your Mac below or download the complete set.
 
-原始视觉素材：Apple；母图提取、放大与适配：[Basic Apple Guy](https://basicappleguy.com/haberdashery/macbook-pro-proled-xdr)。本项目增加底部曲线标准化、纯黑外侧及尺寸整理。MIT 许可用于处理代码，壁纸素材权利归原权利人。
+| Your Mac | Resolution | Download |
+|---|---:|---|
+| MacBook Pro 16-inch | 3456 × 2234 | [PNG](https://github.com/ReffWu/proled-wallpaper/releases/latest/download/proled-macbook-pro-16-3456x2234.png) |
+| MacBook Pro 14-inch | 3024 × 1964 | [PNG](https://github.com/ReffWu/proled-wallpaper/releases/latest/download/proled-macbook-pro-14-3024x1964.png) |
+| MacBook Air 13-inch (M2 and later) | 2560 × 1664 | [PNG](https://github.com/ReffWu/proled-wallpaper/releases/latest/download/proled-macbook-air-13-2560x1664.png) |
+| MacBook Air 15-inch | 2880 × 1864 | [PNG](https://github.com/ReffWu/proled-wallpaper/releases/latest/download/proled-macbook-air-15-2880x1864.png) |
+| Mac Studio + 5K 16:9 display | 5120 × 2880 | [PNG](https://github.com/ReffWu/proled-wallpaper/releases/latest/download/proled-mac-studio-5k-5120x2880.png) |
+
+[Download all five sizes](https://github.com/ReffWu/proled-wallpaper/releases/latest/download/proled-wallpapers-all-sizes.zip)
+
+Original artwork: Apple. Source recreation: [Basic Apple Guy](https://basicappleguy.com/haberdashery/macbook-pro-proled-xdr). Rounded edition: ReffWu. An independent adaptation; image rights remain with their original owners. Processing code is MIT licensed.

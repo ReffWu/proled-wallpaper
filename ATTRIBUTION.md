@@ -18,3 +18,8 @@
 ReffWu：拟合底部两角的连续曲线，将轮廓外侧填充为纯黑，制作五种尺寸的无损 PNG，并公开处理代码与参数。
 
 原图及衍生壁纸、预览图片的权利归原权利人。本项目的 MIT License 仅适用于自行编写的处理代码、测试、配置及说明文档，不对第三方图像授予新的许可。Apple、MacBook 与 Mac Studio 等名称用于说明适配对象。
+
+## 展示机模
+
+- MacBook 展示图由 ReffWu 制作。
+- Studio Display 展示机框来自 [James Jingyi 的 mockup-device-frames](https://github.com/jamesjingyi/mockup-device-frames)，参见该项目的来源与署名说明。
