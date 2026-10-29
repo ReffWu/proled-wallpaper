@@ -5,12 +5,12 @@ import { spawnSync } from 'node:child_process';
 import { applyRoundCorners } from '../src/round-corners.mjs';
 
 const args = process.argv.slice(2);
-if (args.length !== 2 || args.includes('--help')) {
-  console.log('Usage: node scripts/apply-corners.mjs input.png output.png');
+if (![2, 3].includes(args.length) || (args.length === 3 && args[2] !== '--all') || args.includes('--help')) {
+  console.log('Usage: node scripts/apply-corners.mjs input.png output.png [--all]');
   console.log('Requires Node.js 20+ and FFmpeg/ffprobe. Preserves dimensions; never overwrites a file.');
   process.exit(args.includes('--help') ? 0 : 1);
 }
-const [input, output] = args.map(value => resolve(value));
+const [input, output] = args.slice(0, 2).map(value => resolve(value));
 if (!existsSync(input)) throw new Error('Input file does not exist');
 if (existsSync(output)) throw new Error('Output already exists; choose a new filename');
 
@@ -28,7 +28,7 @@ const rgb = run('ffmpeg', [
   '-hide_banner', '-loglevel', 'error', '-i', input, '-map', '0:v:0', '-frames:v', '1',
   '-pix_fmt', 'rgb24', '-f', 'rawvideo', 'pipe:1',
 ]);
-const result = applyRoundCorners(rgb, width, height);
+const result = applyRoundCorners(rgb, width, height, args[2] === '--all' ? 'all' : 'bottom');
 run('ffmpeg', [
   '-hide_banner', '-loglevel', 'error', '-n', '-f', 'rawvideo', '-pixel_format', 'rgb24',
   '-video_size', `${width}x${height}`, '-i', 'pipe:0', '-frames:v', '1',

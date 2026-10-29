@@ -9,9 +9,11 @@ git clone https://github.com/ReffWu/proled-wallpaper.git
 cd proled-wallpaper
 npm test
 node scripts/apply-corners.mjs input.png output-rounded.png
+# Apply the same curve to all four corners:
+node scripts/apply-corners.mjs input.png output-four-corners.png --all
 ```
 
-The tool preserves the input dimensions and writes a lossless RGB PNG. It does not overwrite an existing file. It applies the lower-corner treatment only; resize to your target display dimensions first if necessary.
+The tool preserves the input dimensions and writes a lossless RGB PNG. It does not overwrite an existing file. By default it treats the lower corners; `--all` also treats the upper corners. Resize to your target display dimensions first if necessary.
 
 - [Curve parameters](../config/corner-model.json)
 - [Method and validation](method.md)

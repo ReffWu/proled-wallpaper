@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0",
+  "version": "2.1.0",
   "format": "PNG",
   "assets": [
     {
@@ -45,7 +45,29 @@
       "height": 2880,
       "bytes": 38952425,
       "sha256": "872130195dd9df159933906b10f7625dfa281d7ee3d1ad4b34f2cdffe0e3a016",
-      "url": "https://github.com/ReffWu/proled-wallpaper/releases/latest/download/proled-mac-studio-5k-5120x2880.png"
+      "url": "https://github.com/ReffWu/proled-wallpaper/releases/latest/download/proled-mac-studio-5k-5120x2880.png",
+      "legacy": true,
+      "finish": "bottom-only"
+    },
+    {
+      "file": "proled-mac-studio-5k-straight-5120x2880.png",
+      "device": "Mac Studio + 5K 16:9 display",
+      "finish": "straight",
+      "width": 5120,
+      "height": 2880,
+      "bytes": 21199010,
+      "sha256": "07eaec152f005a174e1aac06002b18a9e4a114603a2395db562ff4e80db325a2",
+      "url": "https://github.com/ReffWu/proled-wallpaper/releases/latest/download/proled-mac-studio-5k-straight-5120x2880.png"
+    },
+    {
+      "file": "proled-mac-studio-5k-rounded-5120x2880.png",
+      "device": "Mac Studio + 5K 16:9 display",
+      "finish": "rounded",
+      "width": 5120,
+      "height": 2880,
+      "bytes": 22239073,
+      "sha256": "6342eef2820a30ad74d20698e97748016f8bf911a262f3a37dba1b42ba4c4f71",
+      "url": "https://github.com/ReffWu/proled-wallpaper/releases/latest/download/proled-mac-studio-5k-rounded-5120x2880.png"
     }
   ]
 }

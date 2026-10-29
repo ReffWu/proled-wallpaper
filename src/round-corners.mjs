@@ -9,8 +9,9 @@ export function cornerOffset(depth, radiusX, radiusY) {
   return radiusX * (1 - Math.pow(Math.max(0, 1 - Math.pow(u, model.exponent)), 1 / model.exponent));
 }
 
-export function applyRoundCorners(rgb, width, height) {
+export function applyRoundCorners(rgb, width, height, corners = 'bottom') {
   if (rgb.length !== width * height * 3) throw new RangeError('Expected packed RGB pixels');
+  if (!['bottom', 'all'].includes(corners)) throw new RangeError('Expected bottom or all corners');
   const out = Buffer.from(rgb);
   const radiusX = model.reference.radius_x * width / model.reference.width;
   const radiusY = model.reference.radius_y * height / model.reference.height;
@@ -28,8 +29,10 @@ export function applyRoundCorners(rgb, width, height) {
       if (coverage === 1) continue;
       // Identical coverage on mirrored pixels keeps both corner shapes equal.
       for (const mirroredX of [x, width - 1 - x]) {
-        const index = (y * width + mirroredX) * 3;
-        for (let c = 0; c < 3; c++) out[index + c] = Math.round(rgb[index + c] * coverage);
+        for (const mirroredY of corners === 'all' ? [y, height - 1 - y] : [y]) {
+          const index = (mirroredY * width + mirroredX) * 3;
+          for (let c = 0; c < 3; c++) out[index + c] = Math.round(rgb[index + c] * coverage);
+        }
       }
     }
   }

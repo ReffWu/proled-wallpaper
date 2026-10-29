@@ -4,7 +4,7 @@ import { resolve } from 'node:path';
 import { createHash } from 'node:crypto';
 
 const manifest = JSON.parse(readFileSync(new URL('../downloads.json', import.meta.url), 'utf8'));
-const directory = resolve(process.argv[2] ?? 'dist/v2.0.0');
+const directory = resolve(process.argv[2] ?? 'dist/v2.1.0');
 for (const asset of manifest.assets) {
   const data = readFileSync(resolve(directory, asset.file));
   const digest = createHash('sha256').update(data).digest('hex');

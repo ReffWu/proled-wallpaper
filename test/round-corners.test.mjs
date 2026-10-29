@@ -48,3 +48,19 @@ test('analytic contour is monotonic and convex without an endpoint kink', () => 
   assert.equal(cornerOffset(80, 80, 80), 0);
   assert.equal(cornerOffset(0, 80, 80), 80);
 });
+
+test('all-corner edition has matching top and bottom contours without changing the center', () => {
+  const source = makeImage();
+  const result = applyRoundCorners(source, width, height, 'all');
+  assert.deepEqual([...result.subarray(0, 3)], [0, 0, 0]);
+  assert.deepEqual([...result.subarray(width * 3 - 3, width * 3)], [0, 0, 0]);
+  for (let y = 0; y < height; y++) {
+    const top = y * width * 3;
+    const bottom = (height - 1 - y) * width * 3;
+    assert.deepEqual(result.subarray(top, top + width * 3), result.subarray(bottom, bottom + width * 3));
+    const center = (y * width + width / 2) * 3;
+    assert.deepEqual(result.subarray(center, center + 3), source.subarray(center, center + 3));
+  }
+  assert.deepEqual(source, makeImage());
+  assert(result.some(value => value > 0 && value < 255));
+});
