@@ -1,0 +1,11 @@
+{
+  "curve": "superellipse",
+  "exponent": 2.8653288159209267,
+  "reference": {
+    "width": 3279,
+    "height": 2160,
+    "radius_x": 79.812603050058,
+    "radius_y": 79.4380851051696
+  },
+  "antialias_samples": 64
+}

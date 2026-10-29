@@ -1,0 +1,16 @@
+{
+  "name": "proled-rounded-wallpapers",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Pure-black rounded bottom corners for PROLED wallpapers, with five lossless PNG sizes.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "round": "node scripts/apply-corners.mjs",
+    "verify": "node scripts/verify-assets.mjs"
+  },
+  "license": "MIT"
+}

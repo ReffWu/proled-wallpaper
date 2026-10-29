@@ -1,0 +1,51 @@
+{
+  "version": "2.0.0",
+  "format": "PNG",
+  "assets": [
+    {
+      "file": "proled-macbook-pro-16-3456x2234.png",
+      "device": "MacBook Pro 16-inch",
+      "width": 3456,
+      "height": 2234,
+      "bytes": 20267276,
+      "sha256": "dc99975c95c97796bedce7974bcb5102eb2af4669040ed021321e13909d48959",
+      "url": "https://github.com/ReffWu/proled-rounded-wallpapers/releases/latest/download/proled-macbook-pro-16-3456x2234.png"
+    },
+    {
+      "file": "proled-macbook-pro-14-3024x1964.png",
+      "device": "MacBook Pro 14-inch",
+      "width": 3024,
+      "height": 1964,
+      "bytes": 15590089,
+      "sha256": "30d09ccee1c8bae1a64a67b96258a1f9835d9319a066f42c8a55a436a513cebc",
+      "url": "https://github.com/ReffWu/proled-rounded-wallpapers/releases/latest/download/proled-macbook-pro-14-3024x1964.png"
+    },
+    {
+      "file": "proled-macbook-air-13-2560x1664.png",
+      "device": "MacBook Air 13-inch (M2 and later)",
+      "width": 2560,
+      "height": 1664,
+      "bytes": 11118645,
+      "sha256": "71d4ad38696a58e60dc2da9b80154912759af1cdf06e43ba38469554a3540c4a",
+      "url": "https://github.com/ReffWu/proled-rounded-wallpapers/releases/latest/download/proled-macbook-air-13-2560x1664.png"
+    },
+    {
+      "file": "proled-macbook-air-15-2880x1864.png",
+      "device": "MacBook Air 15-inch",
+      "width": 2880,
+      "height": 1864,
+      "bytes": 14090676,
+      "sha256": "b3bba9aabfdf35004e1e4f7e1e586083cde1680bf0ff23105424f346a4baba62",
+      "url": "https://github.com/ReffWu/proled-rounded-wallpapers/releases/latest/download/proled-macbook-air-15-2880x1864.png"
+    },
+    {
+      "file": "proled-mac-studio-5k-5120x2880.png",
+      "device": "Mac Studio + 5K 16:9 display",
+      "width": 5120,
+      "height": 2880,
+      "bytes": 38952425,
+      "sha256": "872130195dd9df159933906b10f7625dfa281d7ee3d1ad4b34f2cdffe0e3a016",
+      "url": "https://github.com/ReffWu/proled-rounded-wallpapers/releases/latest/download/proled-mac-studio-5k-5120x2880.png"
+    }
+  ]
+}
